@@ -6,19 +6,47 @@ export interface IUser {
   id: string;
   name: string;
 }
-
+// all
 const DATA = [
   {
     id: '1',
-    name: 'Leeroy Jenkins',
+    name: 'Michael Scott',
   },
   {
     id: '2',
-    name: 'John Doe',
+    name: 'Jim Halpert',
   },
   {
     id: '3',
-    name: 'Michael Scott',
+    name: 'Pam Beesly',
+  },
+  {
+    id: '4',
+    name: 'Dwight Schrute',
+  },
+  {
+    id: '5',
+    name: 'Andy Bernard',
+  },
+  {
+    id: '6',
+    name: 'Ryan Howard',
+  },
+  {
+    id: '7',
+    name: 'Kelly Kapoor',
+  },
+  {
+    id: '8',
+    name: 'Toby Flenderson',
+  },
+  {
+    id: '9',
+    name: 'Stanley Hudson',
+  },
+  {
+    id: '10',
+    name: 'Phyllis Vance',
   },
 ];
 
