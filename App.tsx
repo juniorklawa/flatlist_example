@@ -6,7 +6,7 @@ export interface IUser {
   id: string;
   name: string;
 }
-// all
+
 const DATA = [
   {
     id: '1',
