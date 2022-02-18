@@ -1,6 +1,5 @@
 import React from 'react';
-import {ListRenderItem} from 'react-native';
-import {Container, ItemContainer, ItemName, UsersList} from './styles';
+import {FlatList, Text, View} from 'react-native';
 
 export interface IUser {
   id: string;
@@ -51,22 +50,27 @@ const DATA = [
 ];
 
 const Item = ({data}: {data: IUser}) => (
-  <ItemContainer>
-    <ItemName>{data.name}</ItemName>
-  </ItemContainer>
+  <View
+    style={{
+      backgroundColor: '#eeeeee',
+      borderRadius: 10,
+      padding: 20,
+      marginVertical: 8,
+      marginHorizontal: 16,
+    }}>
+    <Text style={{fontSize: 24}}>{data.name}</Text>
+  </View>
 );
 
 const App = () => {
-  const renderItem: ListRenderItem<IUser> = ({item}) => <Item data={item} />;
-
   return (
-    <Container>
-      <UsersList
+    <View style={{flex: 1}}>
+      <FlatList
         data={DATA}
-        renderItem={renderItem}
+        renderItem={({item}) => <Item data={item} />}
         keyExtractor={(item: IUser) => item.id}
       />
-    </Container>
+    </View>
   );
 };
 
