@@ -2,7 +2,7 @@ import {FlatList} from 'react-native';
 import styled from 'styled-components/native';
 import {IUser} from './App';
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   flex: 1;
 `;
 
