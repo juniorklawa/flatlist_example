@@ -2,12 +2,8 @@ import {FlatList} from 'react-native';
 import styled from 'styled-components/native';
 import {IUser} from './App';
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.View`
   flex: 1;
-`;
-
-export const UsersList = styled(FlatList as new () => FlatList<IUser>)`
-  padding: 20px;
 `;
 
 export const ItemContainer = styled.View`
@@ -20,4 +16,8 @@ export const ItemContainer = styled.View`
 
 export const ItemName = styled.Text`
   font-size: 24px;
+`;
+
+export const UsersList = styled(FlatList as new () => FlatList<IUser>)`
+  padding: 20px;
 `;
